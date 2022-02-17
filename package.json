@@ -4,7 +4,7 @@
   "description": "MYOB Code test Tax Calculator",
   "main": "bin/index.js",
   "scripts": {
-    "lint": "find bin model utils -name '*.js' |  xargs standard",
+    "lint": "find bin src utils -name '*.js' |  xargs standard",
     "test": "jest"
   },
   "repository": {
@@ -15,7 +15,13 @@
     "MYOB",
     "code test"
   ],
-  "author": "Josh",
+  "standard": {
+    "globals": [
+      "test",
+      "expect"
+    ]
+  },
+  "author": "Josh Liu",
   "license": "MIT",
   "bin": {
     "generatePaySlip": "./bin/index.js"

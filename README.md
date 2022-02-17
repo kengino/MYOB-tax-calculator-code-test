@@ -34,11 +34,26 @@ This program is triggered by this command
 ```bash
 generatePaySlip John 20000
 ```
-Replace John to the name you wish
-Replace 20000 to the income belong to the person
+Replace John to the name you wish, replace 20000 to the income belong to the person
 
 ## Unit Tests Coverage
+```bash
+npm run test
+```
+```bash
+PASS  utils/__test__/tax-rate-utils.test.js
+PASS  src/__test__/tax-calculator.test.js
 
-
+Test Suites: 2 passed, 2 total
+Tests:       10 passed, 10 total
+Snapshots:   0 total
+Time:        0.41 s, estimated 1 s
+Ran all test suites
+```
+## Coding Style
+This program is written in Javascript follow the [Standard](https://github.com/standard) coding style
+```bash
+npm run lint
+```
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
