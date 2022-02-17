@@ -26,7 +26,7 @@ npm list -g --depth=0
 
 To uninstall this program after you finish
 ```bash
-npm uninstall myob-tax-calculator-code-test
+npm uninstall -g myob-tax-calculator-code-test
 ```
 
 # Usage
