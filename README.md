@@ -41,14 +41,17 @@ Replace John to the name you wish, replace 20000 to the income belong to the per
 npm run test
 ```
 ```bash
-PASS  utils/__test__/tax-rate-utils.test.js
-PASS  src/__test__/tax-calculator.test.js
+> myob-tax-calculator-code-test@1.0.0 test
+> jest
+
+ PASS  utils/__test__/tax-rate-utils.test.js
+ PASS  src/__test__/tax-calculator.test.js
 
 Test Suites: 2 passed, 2 total
-Tests:       10 passed, 10 total
+Tests:       11 passed, 11 total
 Snapshots:   0 total
-Time:        0.41 s, estimated 1 s
-Ran all test suites
+Time:        0.527 s, estimated 1 s
+Ran all test suites.
 ```
 ## Coding Style
 This program is written in Javascript follow the [Standard](https://github.com/standard) coding style

@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 const { taxRateCalculator } = require('../src/tax-calculator')
+const { getMonthlyValue } = require('../utils/tax-rate-utils')
 const { TAX_RATE_TABLE } = require('../utils/tax-rates')
 
 const customerName = process.argv[2]
@@ -10,7 +11,11 @@ let totalTax = 0
 try {
   totalTax = taxRateCalculator(income, TAX_RATE_TABLE)
   const netIncome = income - totalTax
-  console.log(`\n Monthly Payslip for: "${customerName}" \n Gross Monthly Income: ${income} \n Monthly Income Tax: ${totalTax} \n Net Monthly Income: ${netIncome} \n`)
+  console.log(`
+    Monthly Payslip for: "${customerName}"
+    Gross Monthly Income: ${getMonthlyValue(income)}
+    Monthly Income Tax: ${getMonthlyValue(totalTax)}
+    Net Monthly Income: ${getMonthlyValue(netIncome)}\n`)
 } catch (error) {
   console.error(error.message)
 }

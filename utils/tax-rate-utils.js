@@ -1,3 +1,4 @@
+const MONTH_IN_YEAR = 12
 /**
  * This function takes taxRateTable input, and return the incomeThredhold as array
  * @param {*} taxRateTable
@@ -14,7 +15,17 @@ const getIncomeThreholdArray = (taxRateTable) => {
 const getTaxRateArray = (taxRateTable) => {
   return taxRateTable.map(item => item.taxRate)
 }
+/**
+ * This function takes annual value and reuturn monthly value by devided by 12
+ * @param {*} annualSalary
+ * @returns
+ */
+const getMonthlyValue = (annualValue) => {
+  return annualValue / MONTH_IN_YEAR
+}
+
 module.exports = {
   getIncomeThreholdArray,
-  getTaxRateArray
+  getTaxRateArray,
+  getMonthlyValue
 }
