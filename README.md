@@ -29,13 +29,23 @@ To uninstall this program after you finish
 npm uninstall -g myob-tax-calculator-code-test
 ```
 
-# Usage
+## Usage
 This program is triggered by this command
 ```bash
 generatePaySlip John 20000
 ```
 Replace John to the name you wish, replace 20000 to the income belong to the person
 
+## Sample Result
+```bash
+josh.liu@JL MYOB-tax-calculator-code-test % generatePaySlip Josh 60000 
+
+    Monthly Payslip for: "Josh"
+    Gross Monthly Income: 5000
+    Monthly Income Tax: 500
+    Net Monthly Income: 4500
+
+```
 ## Unit Tests Coverage
 ```bash
 npm run test
