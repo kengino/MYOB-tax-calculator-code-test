@@ -1,0 +1,31 @@
+{
+  "name": "myob-tax-calculator-code-test",
+  "version": "1.0.0",
+  "description": "MYOB Code test Tax Calculator",
+  "main": "bin/index.js",
+  "scripts": {
+    "lint": "find bin model utils -name '*.js' |  xargs standard",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kengino/MYOB-tax-calculator-code-test.git"
+  },
+  "keywords": [
+    "MYOB",
+    "code test"
+  ],
+  "author": "Josh",
+  "license": "MIT",
+  "bin": {
+    "generatePaySlip": "./bin/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/kengino/MYOB-tax-calculator-code-test/issues"
+  },
+  "homepage": "https://github.com/kengino/MYOB-tax-calculator-code-test#readme",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "standard": "^16.0.4"
+  }
+}
