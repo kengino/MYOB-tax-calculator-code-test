@@ -32,13 +32,13 @@ npm uninstall -g myob-tax-calculator-code-test
 ## Usage
 This program is triggered by this command
 ```bash
-generatePaySlip John 20000
+generatePaySlip John 20000 2021
 ```
-Replace John to the name you wish, replace 20000 to the income belong to the person
+Replace John to the name you wish, replace 20000 to the income belong to the person, third parameter indicate FY year
 
 ## Sample Result
 ```bash
-josh.liu@JL MYOB-tax-calculator-code-test % generatePaySlip Josh 60000 
+josh.liu@JL MYOB-tax-calculator-code-test % generatePaySlip Josh 60000 2021
 
     Monthly Payslip for: "Josh"
     Gross Monthly Income: 5000
@@ -54,13 +54,14 @@ npm run test
 > myob-tax-calculator-code-test@1.0.0 test
 > jest
 
- PASS  utils/__test__/tax-rate-utils.test.js
  PASS  src/__test__/tax-calculator.test.js
+ PASS  utils/__test__/tax-rate-utils.test.js
+ PASS  src/__test__/getTaxRateTable.test.js
 
-Test Suites: 2 passed, 2 total
-Tests:       11 passed, 11 total
+Test Suites: 3 passed, 3 total
+Tests:       13 passed, 13 total
 Snapshots:   0 total
-Time:        0.527 s, estimated 1 s
+Time:        0.558 s, estimated 1 s
 Ran all test suites.
 ```
 ## Coding Style

@@ -8,6 +8,9 @@ const customerName = process.argv[2]
 const income = process.argv[3]
 const year = process.argv[4]
 
+if (!customerName || !income || !year) {
+  throw new Error('Bad Request - Invalid input parameter.')
+}
 let totalTax = 0
 try {
   const taxRateTableForSelectedInput = getTaxRateTable(year)
